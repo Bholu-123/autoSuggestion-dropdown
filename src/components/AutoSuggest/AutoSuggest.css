@@ -1,0 +1,128 @@
+.to-wrapper {
+  max-width: 640px;
+  margin: 40px auto;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.to-field {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  min-height: 40px;
+  border: 1px solid transparent; /* plain block until clicked */
+  border-radius: 4px;
+  cursor: text;
+}
+.to-field.active {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 1px #1a73e8;
+}
+
+.to-label {
+  color: #5f6368;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.to-input {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+  padding: 4px 0;
+}
+
+/* Avatar (shared) */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #6c5ce7;
+  color: #fff;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.avatar-lg {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+/* Tag chip */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #e8f0fe;
+  border-radius: 16px;
+  padding: 2px 8px 2px 2px;
+  font-size: 13px;
+  color: #202124;
+}
+.tag-remove {
+  cursor: pointer;
+  color: #5f6368;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+}
+.tag-remove:hover {
+  color: #202124;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 4px 0 0;
+  padding: 6px 0;
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 10;
+}
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.dropdown-item.highlight,
+.dropdown-item:hover {
+  background: #f1f3f4;
+}
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+.item-name {
+  font-size: 14px;
+  color: #202124;
+}
+.item-email {
+  font-size: 12px;
+  color: #5f6368;
+}
+.add-new {
+  color: #1a73e8;
+  font-size: 14px;
+}
+.no-result {
+  color: #5f6368;
+  font-size: 14px;
+  cursor: default;
+}
